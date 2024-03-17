@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+
+header{   
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.menu {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.menu-item {
+    padding: 5px;
+}
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 30px;
+  }
+  
+  .post-1 {
+    grid-column: 1;
+
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    border-radius: 10%;
+
+    transition: 0.4s
+  }
+
+  .post-1 img{
+    width: 200px;
+  }
+
+  .post-2 {
+    grid-column: 2;
+
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    border-radius: 10%;
+
+    transition: 0.4s
+  }
+
+  .post-2 img{
+    width: 200px;
+  }
+
+  .post-3 {
+    grid-column: 3;
+
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    border-radius: 10%;
+
+    transition: 0.4s
+  }
+
+  .post-3 img{
+    width: 200px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+
+  .post-1:hover,
+  .post-2:hover,
+  .post-3:hover{
+    transform: scale(1.2);    
+  }
+
+
+
+
+  /********************page1*********************/
+.page{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+}
+
+
+.page-menu{
+    background-color: #666;
+    width: 200px;
+    height: 100%;
+}
+
+
+.page-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-menu-item:hover,
+.page-menu-item-2:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.page-menu-item{
+    line-height: 3;
+}
+
+.page-menu-item-2{
+    padding-top: 30px;
+    line-height: 1;
+}
+
+
+
+
+.page1-p{    
+    padding-left: 25%;
+            
+}
+
+.page1-p p{
+    width: 500px;  
+
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+}
+
+.page-news {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    left: 0;
+
+    background-color: #666;
+    width: 200px;
+    height: 100%;
+}
+
+.page-news-item:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+
+.page-news-item-2{
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page2-p{
+    padding: 100px;
+
+    max-width: 500px;
+  }
+  
