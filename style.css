@@ -176,7 +176,8 @@ header {
     height: 100%;
 }
 
-.page-news-item:hover {
+.page-news-item:hover,
+.page-news-item-2:hover {
     background-color: #ddd;
     cursor: pointer;
 }
@@ -185,23 +186,3 @@ header {
 .page-news-item-2{
     padding-top: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.page2-p{
-    padding: 100px;
-
-    max-width: 500px;
-  }
-  
