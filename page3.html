@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><h1>Лента социальной сети: 1920-30-е гг. в Германии</h1></a>
+        <a href="index.html"><h1>Лента социальной сети: 1920-30 гг. в Германии</h1></a>
     </header>
     
     <main>        
@@ -46,7 +46,21 @@
                     Mercedes-Benz W143 стал символом высокого статуса и возможности воплотить в жизнь мечты о лучшем будущем. Автомобиль стал не просто транспортным средством, а знаком надежды и веры в светлое завтра. Гордость и восторг переполняли сердца рабочих, добившихся такого впечатляющего достижения.
                 </p>
 
-                <img src="img/car-1.jpg" alt="">
+                <div class="wrap">
+                    <button id='prev' class="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                            <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                          </svg>
+                    </button> 
+                    
+                    <img class="img" src="" alt="">                    
+
+                    <button id='next' class="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                            <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                          </svg>
+                    </button>  
+                </div>
 
                 <p>
                     Mercedes-Benz W143 - это не просто автомобиль, это символ стремления к лучшей жизни и возможности добиться успеха внутри любых обстоятельств. Он открыл перед рабочим классом новые горизонты и показал, что даже самые невероятные мечты могут стать реальностью, если верить в свои силы и настойчиво их преследовать. Mercedes-Benz W143 был исключительным маяком во времена сомнений и трудностей, даровавшим надежду и вдохновение на будущее.
@@ -85,4 +99,40 @@
         <div class="div"></div>
     </footer>
 </body>
+
+<script>
+    const imageList = [
+    'img/page3/1.jpg',
+    'img/page3/2.jpg',
+    'img/page3/3.jpg',    
+    'img/car-1.jpg'    
+    ]
+    const img = document.querySelector('.img')
+    const next = document.getElementById('next')
+    const prev = document.getElementById('prev')
+    
+    var numImage = 0
+    img.src = imageList[numImage]
+
+    next.addEventListener('click', () => {
+    numImage++
+    if (numImage >= imageList.length) {
+        numImage = 0
+    }
+    console.log(numImage >= imageList.length)
+    console.log(numImage)
+    img.src = imageList[numImage]
+    })
+
+    prev.addEventListener('click', () => {
+    numImage--
+    if (numImage <= -1) {
+        numImage = imageList.length
+    }
+    console.log(numImage <=-1)
+    console.log(numImage)
+    img.src = imageList[numImage]
+    })
+</script>
+
 </html>
